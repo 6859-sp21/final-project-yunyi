@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import './index.scss';
 import App from './pages/App';
+import BeingPage from "./pages/being";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <HashRouter>
+    <Route exact path="/" component={App} />
+    <Route exact path="/being" component={BeingPage} />
+  </HashRouter>,
   document.getElementById('root')
 );
 
