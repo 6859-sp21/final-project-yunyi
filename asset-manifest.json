@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/a4-cat-breeds-1/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/a4-cat-breeds-1/static/js/main.a31a76ce.chunk.js",
-    "main.js.map": "/a4-cat-breeds-1/static/js/main.a31a76ce.chunk.js.map",
-    "runtime-main.js": "/a4-cat-breeds-1/static/js/runtime-main.6957dcdd.js",
-    "runtime-main.js.map": "/a4-cat-breeds-1/static/js/runtime-main.6957dcdd.js.map",
-    "static/js/2.d0eb047a.chunk.js": "/a4-cat-breeds-1/static/js/2.d0eb047a.chunk.js",
-    "static/js/2.d0eb047a.chunk.js.map": "/a4-cat-breeds-1/static/js/2.d0eb047a.chunk.js.map",
-    "static/js/3.60aa7dd0.chunk.js": "/a4-cat-breeds-1/static/js/3.60aa7dd0.chunk.js",
-    "static/js/3.60aa7dd0.chunk.js.map": "/a4-cat-breeds-1/static/js/3.60aa7dd0.chunk.js.map",
-    "index.html": "/a4-cat-breeds-1/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/a4-cat-breeds-1/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.d0eb047a.chunk.js.LICENSE.txt": "/a4-cat-breeds-1/static/js/2.d0eb047a.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/a4-cat-breeds-1/static/media/logo.6ce24c58.svg"
+    "main.css": "/final-project-yunyi/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/final-project-yunyi/static/js/main.a31a76ce.chunk.js",
+    "main.js.map": "/final-project-yunyi/static/js/main.a31a76ce.chunk.js.map",
+    "runtime-main.js": "/final-project-yunyi/static/js/runtime-main.cd128595.js",
+    "runtime-main.js.map": "/final-project-yunyi/static/js/runtime-main.cd128595.js.map",
+    "static/js/2.d0eb047a.chunk.js": "/final-project-yunyi/static/js/2.d0eb047a.chunk.js",
+    "static/js/2.d0eb047a.chunk.js.map": "/final-project-yunyi/static/js/2.d0eb047a.chunk.js.map",
+    "static/js/3.60aa7dd0.chunk.js": "/final-project-yunyi/static/js/3.60aa7dd0.chunk.js",
+    "static/js/3.60aa7dd0.chunk.js.map": "/final-project-yunyi/static/js/3.60aa7dd0.chunk.js.map",
+    "index.html": "/final-project-yunyi/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/final-project-yunyi/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.d0eb047a.chunk.js.LICENSE.txt": "/final-project-yunyi/static/js/2.d0eb047a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/final-project-yunyi/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6957dcdd.js",
+    "static/js/runtime-main.cd128595.js",
     "static/js/2.d0eb047a.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.a31a76ce.chunk.js"
