@@ -1,0 +1,33 @@
+.header {
+  margin-top: 30px;
+  text-align: center;
+  .logo {
+    font-family: 'Orelega One', cursive;
+    font-size: 50px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+
+    .navbar-item {
+      padding: 30px 35px 50px 35px;
+      font-size: 20px;
+
+      &:hover {
+        background-image: url('../assets/ink-bleed.png');
+        background-size: 120px 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+    }
+  }
+}
+

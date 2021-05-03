@@ -5,12 +5,12 @@ import './index.scss';
 
 // pages
 import AboutPage from "./pages/about";
-import BeingPage from "./pages/being";
+import BirthPage from "./pages/birth";
 
 ReactDOM.render(
   <HashRouter>
     <Route exact path="/" component={AboutPage} />
-    <Route exact path="/being" component={BeingPage} />
+    <Route exact path="/birth" component={BirthPage} />
   </HashRouter>,
   document.getElementById('root')
 );

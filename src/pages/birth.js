@@ -1,13 +1,12 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 
-const AboutPage = () => {
+const BirthPage = () => {
   return (
     <div>
       <Navbar />
-      AboutPage
     </div>
   );
 }
 
-export default AboutPage;
+export default BirthPage;
