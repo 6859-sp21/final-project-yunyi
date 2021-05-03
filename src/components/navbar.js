@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import InkBleed from '../assets/ink-bleed.png';
 
-const NavBar = () => {
+const NavBar = ( {pageName=null} ) => {
   return (
     <div className="header">
       <div className="logo">
