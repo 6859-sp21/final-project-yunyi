@@ -1,6 +1,31 @@
+#new-born-number-visualization {
+  margin-top: 80px;
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: space-evenly;
 
-.new-born-general-visualization {
-  .number {
-    font-size: 50px;
+  #new-born-number-china {
+    text-align: center;
+
+    .number {
+      font-size: 50px;
+      color: darkred;
+      padding: 30px 40px;
+      display: inline-block;
+      border: 2px darkred solid;
+    }
+
+    .caption {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  #new-born-number-natural {
+    @extend #new-born-number-china;
+    .number {
+      color: forestgreen;
+      border: 2px forestgreen solid;
+    }
   }
 }
