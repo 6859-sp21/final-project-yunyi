@@ -5,7 +5,7 @@ const NavBar = ( {pageName=null} ) => {
   return (
     <div className="header">
       <div className="logo">
-        Why Feminism in China?
+        Gender Inequality in China
       </div>
       <div className="navbar">
         <div className="navbar-item">
