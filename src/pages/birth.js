@@ -3,6 +3,7 @@ import { Scrollama, Step } from 'react-scrollama';
 import Navbar from '../components/navbar';
 import SexRatioByChildNumber from '../visualizations/birth-sex-ratio-by-child-number';
 import SexRatioWorld from "../visualizations/birth-sex-ratio-world";
+import SexRatioDotPlot from "../visualizations/birth-sex-ratio-dot-plot";
 
 const SexRatioNumber = () => (
   <div style={{
@@ -36,10 +37,11 @@ const BirthPage = () => {
           <SexRatioNumber />
         </div>
         <div className="visualization" style={{visibility: currentStepIndex===3 ? "visible" : "hidden"}}>
-          <SexRatioWorld />
+          <SexRatioDotPlot />
         </div>
         <div className="visualization" style={{visibility: currentStepIndex===4 ? "visible" : "hidden"}}>
           <SexRatioByChildNumber />
+          <SexRatioWorld />
         </div>
 
 

@@ -1,3 +1,40 @@
+// circle plot
+
+.dot-plot-overall {
+  display: flex;
+  .sex-block {
+    .label {
+      font-size: 30px;
+      margin-left: 80px;
+    }
+
+    .sex-ratio-circle-wrapper {
+      display: inline-block;
+      width: 200px;
+      padding: 20px;
+
+      .sex-ratio-circle-boy {
+        float: left;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin: 3px;
+        background-color: #477091;
+        border-radius: 50%;
+      }
+
+      .sex-ratio-circle-girl {
+        @extend .sex-ratio-circle-boy;
+        background-color: #8a3821;
+      }
+    }
+  }
+}
+
+
+
+
+// obsolete
 #new-born-number-visualization {
   margin-top: 80px;
   margin-bottom: 160px;
@@ -29,3 +66,6 @@
     }
   }
 }
+
+
+
