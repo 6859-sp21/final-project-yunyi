@@ -1,17 +1,22 @@
 import React from "react";
 
-const SexRatioDotPlot = () => {
+const SexRatioDotPlot = ({type}) => {
+  const boy_count = 121;
+  const girl_count = (type==="china") ? 100 : 116;
+
   let boy_circles = [];
   let girl_circles = [];
 
-  for (let i=0; i<121; i++) {
+  for (let i=0; i<boy_count; i++) {
     boy_circles.push(
       <div key={i} className="sex-ratio-circle-boy" />
     )
   }
 
-  for (let i=0; i<100; i++) {
+  for (let i=0; i<girl_count; i++) {
     girl_circles.push(
+      (type==="missing" && i > 100) ?
+        <div key={i} className="sex-ratio-circle-girl-missing" /> :
       <div key={i} className="sex-ratio-circle-girl" />
     )
   }

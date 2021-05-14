@@ -32,14 +32,21 @@ const BirthPage = () => {
       <Navbar pageName="birth"/>
 
       <div className="page-contents">
-        <div className="visualization" style={{visibility:
-            currentStepIndex===2 ? "visible" : "hidden"}}>
+        <div className="visualization-fancy" style={{opacity:
+            currentStepIndex===2 ? 1 : 0}}>
           <SexRatioNumber />
         </div>
-        <div className="visualization" style={{visibility: currentStepIndex===3 ? "visible" : "hidden"}}>
-          <SexRatioDotPlot />
+        <div className="visualization-fancy" style={{opacity: currentStepIndex===3 ? 1: 0}}>
+          <SexRatioDotPlot  type="china" />
         </div>
-        <div className="visualization" style={{visibility: currentStepIndex===4 ? "visible" : "hidden"}}>
+        <div className="visualization-fancy" style={{opacity: currentStepIndex===4 ? 1 : 0}}>
+          <SexRatioDotPlot  type="world" />
+        </div>
+        <div className="visualization-fancy" style={{opacity: currentStepIndex===5 ? 1 : 0}}>
+          <SexRatioDotPlot  type="missing" />
+        </div>
+
+        <div className="visualization-fancy" style={{opacity: currentStepIndex===6 ? 1 : 0}}>
           <SexRatioByChildNumber />
           <SexRatioWorld />
         </div>
@@ -55,7 +62,7 @@ const BirthPage = () => {
             <Step data={2}>
               <div className="text-block">
                 <p>
-                  In 2009, the sex ratio of the new born babies in China was <b>1.21: 1</b>.
+                  In 2009, the newborn sex ratio China was <b>1.21: 1</b>.
                 </p>
               </div>
             </Step>
@@ -66,12 +73,18 @@ const BirthPage = () => {
                 </p>
               </div>
             </Step>
-
             <Step data={4}>
               <div className="text-block">
                 <p>
-                  This number was the highest among the world, and
-                  much higher than the world average, 1.05: 1.
+                  This number was much higher than the world average, 1.05: 1,
+                  where 115 girls should have been born with 121 boys.
+                </p>
+              </div>
+            </Step>
+            <Step data={5}>
+              <div className="text-block">
+                <p>
+                  It means that in China, with every 100 newborn girls, 15 went missing.
                 </p>
               </div>
             </Step>

@@ -16,7 +16,11 @@
   width: 40vw;
   height: 400px;
   margin: 10px;
-  //border: solid grey 1px;
+}
+
+.visualization-fancy {
+  @extend .visualization;
+  transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 }
 
 .text-block {

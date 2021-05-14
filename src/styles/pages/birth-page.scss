@@ -1,5 +1,4 @@
 // circle plot
-
 .dot-plot-overall {
   display: flex;
   .sex-block {
@@ -26,6 +25,14 @@
       .sex-ratio-circle-girl {
         @extend .sex-ratio-circle-boy;
         background-color: #8a3821;
+      }
+
+      .sex-ratio-circle-girl-missing {
+        @extend .sex-ratio-circle-boy;
+        background-color: transparent;
+        border: dotted black 2px;
+        width: 14px;
+        height: 14px;
       }
     }
   }
