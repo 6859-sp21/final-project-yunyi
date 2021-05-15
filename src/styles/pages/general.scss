@@ -14,13 +14,13 @@
   position: fixed;
   top: 200px;
   width: 40vw;
-  height: 400px;
+  height: 600px;
   margin: 10px;
 }
 
 .visualization-fancy {
   @extend .visualization;
-  transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  transition: visibility 1s, opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
 }
 
 .text-block {
