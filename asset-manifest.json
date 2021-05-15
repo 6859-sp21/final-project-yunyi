@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/final-project-yunyi/static/css/main.d5ad6309.chunk.css",
-    "main.js": "/final-project-yunyi/static/js/main.a7da4e0f.chunk.js",
-    "main.js.map": "/final-project-yunyi/static/js/main.a7da4e0f.chunk.js.map",
+    "main.css": "/final-project-yunyi/static/css/main.abe66ec8.chunk.css",
+    "main.js": "/final-project-yunyi/static/js/main.7c1a18e7.chunk.js",
+    "main.js.map": "/final-project-yunyi/static/js/main.7c1a18e7.chunk.js.map",
     "runtime-main.js": "/final-project-yunyi/static/js/runtime-main.477298ae.js",
     "runtime-main.js.map": "/final-project-yunyi/static/js/runtime-main.477298ae.js.map",
-    "static/js/2.5f5dcb8c.chunk.js": "/final-project-yunyi/static/js/2.5f5dcb8c.chunk.js",
-    "static/js/2.5f5dcb8c.chunk.js.map": "/final-project-yunyi/static/js/2.5f5dcb8c.chunk.js.map",
+    "static/js/2.2755ca71.chunk.js": "/final-project-yunyi/static/js/2.2755ca71.chunk.js",
+    "static/js/2.2755ca71.chunk.js.map": "/final-project-yunyi/static/js/2.2755ca71.chunk.js.map",
     "index.html": "/final-project-yunyi/index.html",
-    "static/css/main.d5ad6309.chunk.css.map": "/final-project-yunyi/static/css/main.d5ad6309.chunk.css.map",
-    "static/js/2.5f5dcb8c.chunk.js.LICENSE.txt": "/final-project-yunyi/static/js/2.5f5dcb8c.chunk.js.LICENSE.txt",
+    "static/css/main.abe66ec8.chunk.css.map": "/final-project-yunyi/static/css/main.abe66ec8.chunk.css.map",
+    "static/js/2.2755ca71.chunk.js.LICENSE.txt": "/final-project-yunyi/static/js/2.2755ca71.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/final-project-yunyi/static/media/ink-bleed.41f9deeb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.477298ae.js",
-    "static/js/2.5f5dcb8c.chunk.js",
-    "static/css/main.d5ad6309.chunk.css",
-    "static/js/main.a7da4e0f.chunk.js"
+    "static/js/2.2755ca71.chunk.js",
+    "static/css/main.abe66ec8.chunk.css",
+    "static/js/main.7c1a18e7.chunk.js"
   ]
 }
