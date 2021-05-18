@@ -4,6 +4,7 @@ import Navbar from '../components/navbar';
 import SexRatioByChildNumber from '../visualizations/birth-sex-ratio-by-child-number';
 import SexRatioWorldByYear from "../visualizations/birth-sex-ratio-world";
 import SexRatioDotPlot from "../visualizations/birth-sex-ratio-dot-plot";
+import ScrollToTop from "../components/scroll-to-top";
 
 const SexRatioNumber = () => (
   <div style={{
@@ -44,7 +45,7 @@ const BirthPage = () => {
   // data prop of the step, which in this demo stores the index of the step.
   const onStepEnter = ({ data }) => {
     setCurrentStepIndex(data);
-    if (data > 7) {
+    if (data > 7 && data < 24) {
       setCountryVisYear(years[data-8]);
     }
   };
@@ -53,6 +54,7 @@ const BirthPage = () => {
 
   return (
     <div className="page">
+      <ScrollToTop />
       <Navbar pageName="birth"/>
 
       <div className="page-contents">
@@ -106,10 +108,10 @@ const BirthPage = () => {
             {/*<SexRatioWorld />*/}
           </div>
         </div>
-        <div className="visualization-fancy"
+        <div className="visualization"
              style={{
-               opacity: currentStepIndex>=8 ? 1 : 0,
-               visibility: currentStepIndex>=8 ? "visible" : "hidden"
+               opacity: currentStepIndex>=8 && currentStepIndex < 24 ? 1 : 0,
+               visibility: currentStepIndex>=8 && currentStepIndex < 24 ? "visible" : "hidden"
              }}
         >
           {years[currentStepIndex-8]}
@@ -117,14 +119,16 @@ const BirthPage = () => {
             <SexRatioWorldByYear year={countryVisYear} />
           </div>
         </div>
-        {/*<div className="visualization-fancy"*/}
-        {/*     style={{*/}
-        {/*       opacity: currentStepIndex=== ? 1 : 0,*/}
-        {/*       visibility: currentStepIndex===8 ? "visible" : "hidden"*/}
-        {/*     }}*/}
-        {/*>*/}
-        {/*  <SexRatioByChildNumber />*/}
-        {/*</div>*/}
+        <div className="visualization"
+             style={{
+               opacity: currentStepIndex=== 27 || currentStepIndex=== 26 ? 1 : 0,
+               visibility: currentStepIndex=== 27 || currentStepIndex=== 26 ? "visible" : "hidden"
+             }}
+        >
+          <SexRatioByChildNumber type={currentStepIndex=== 26 ? "original": "missing"}/>
+        </div>
+
+
 
 
         <div className="accompany-text-all">
@@ -177,30 +181,62 @@ const BirthPage = () => {
                 </p>
               </div>
             </Step>
-            {
-              years.map((year, i) => (
-                <Step data={i+8}>
-                  <div style={{
-                    textAlign:"center",
-                    fontSize:"20px",
-                    marginTop:"10px",
-                    color: currentStepIndex===4 ? "black": fadeColor
-                  }}
-                  >
-                    {year}
-                  </div>
-                </Step>
-              ))
-            }
+              {
+                years.map((year, i) => (
+                  <Step data={i+8}>
+                    <div style={{
+                      textAlign:"center",
+                      fontSize:"20px",
+                      marginTop:"10px",
+                      color: currentStepIndex===4 ? "black": fadeColor
+                    }}
+                    >
+                      {year}
+                    </div>
+                  </Step>
+                ))
+              }
+            <Step data={24}>
+              <div className="text-block" style={{marginTop: "200px"}}>
+                <h2>One Child Policy</h2>
+                <p>
+                  The one child policy, which outlaws having more than one child in a family, is the catalyst that turns
+                  the widespread son preference into a female genocide.
+                </p>
+              </div>
+            </Step>
+            <Step data={25} >
+              <div className="text-block">
+                <p>
+                  To avoid losing their jobs for having a second child, the son-seeking families ended up aborting
+                  or killing their daughters to make room for their son.
+                </p>
+              </div>
+            </Step>
+            <Step data={26} >
+              <div className="text-block">
+                <p>
+                  The newborn sex ratios for the first child, second child and third child
+                  in 2009 are <b>1.14: 1</b>, <b>1.28:1</b> and <b>1.62:1</b>.
+                </p>
+              </div>
+            </Step>
+            <Step data={27} >
+              <div className="text-block">
+                <p>
+                  This translates to <b>7.7%</b>, <b>18.2%</b> and <b>35%</b> of the girls being aborted or killed.
+                </p>
+              </div>
+            </Step>
+            <Step data={28} >
+              <div className="text-block">
+                <p>
+
+                </p>
+              </div>
+            </Step>
 
 
-            {/*<Step data={4}>*/}
-            {/*  <div className="text-block">*/}
-            {/*    <p>*/}
-            {/*      Due to the one-child policy, the second or third child (illegal) faces even harsher sex selection.*/}
-            {/*    </p>*/}
-            {/*  </div>*/}
-            {/*</Step>*/}
           </Scrollama>
         </div>
 

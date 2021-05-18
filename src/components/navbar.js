@@ -9,22 +9,27 @@ const NavBar = ( {pageName=null} ) => {
       </div>
       <div className="navbar">
         <div className="navbar-item">
+          <Link to="/">
+            about
+          </Link>
+        </div>
+        <div className="navbar-item">
           <Link to="/birth">
             birth
           </Link>
         </div>
-        <div className="navbar-item">
-          school
-        </div>
-        <div className="navbar-item">
-          work
-        </div>
+        {/*<div className="navbar-item">*/}
+        {/*  school*/}
+        {/*</div>*/}
+        {/*<div className="navbar-item">*/}
+        {/*  work*/}
+        {/*</div>*/}
         <div className="navbar-item">
           marriage
         </div>
-        <div className="navbar-item">
-          inheritance
-        </div>
+        {/*<div className="navbar-item">*/}
+        {/*  inheritance*/}
+        {/*</div>*/}
       </div>
     </div>
   );
