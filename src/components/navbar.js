@@ -25,7 +25,9 @@ const NavBar = ( {pageName=null} ) => {
         {/*  work*/}
         {/*</div>*/}
         <div className="navbar-item">
-          marriage
+          <Link to="/marriage">
+            marriage
+          </Link>
         </div>
         {/*<div className="navbar-item">*/}
         {/*  inheritance*/}

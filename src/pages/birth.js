@@ -30,7 +30,7 @@ const DotGirlMissing = () => {
   )
 };
 
-const fadeColor="#5e5e5e";
+export const fadeColor="#5e5e5e";
 
 
 const BirthPage = () => {
