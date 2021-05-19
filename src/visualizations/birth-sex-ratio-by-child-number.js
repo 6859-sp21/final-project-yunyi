@@ -91,48 +91,57 @@ const Ratio = [1.1373, 1.2843, 1.6156]
 // victory
 const SexRatioByChildNumberVictory = ({type}) => (
   <div>
-    <VictoryChart
-      theme={VictoryTheme.grayscale}
-      domainPadding={40}
-      animate={{duration: 400}}
+    <div>
+      <VictoryChart
+        theme={VictoryTheme.grayscale}
+        domainPadding={40}
+        animate={{duration: 400}}
+      >
+        <VictoryAxis
+          style={{
+            axis: {stroke: "transparent"},
+            ticks: {stroke: "transparent"}
+          }}
+          // tickValues specifies both the number of ticks and where
+          // they are placed on the axis
+          tickValues={[1, 2, 3]}
+          tickFormat={["First Child", "Second Child", "Third Child"]}
+        />
+        <VictoryStack>
+          <VictoryBar
+            data={type==="missing" ? BoyData: BoyDataFirst}
+            color="#477091"
+            x="num_child"
+            y="percentage"
+          />
+          <VictoryBar
+            data={type==="missing" ? GirlData: GirlDataFirst}
+            color="#8a3821"
+            x="num_child"
+            y="percentage"
+            labels={({ datum }) => (type==="missing" ? null : datum.ratio)}
+          />
+          {
+            type==="missing" &&
+            <VictoryBar
+              data={MissingGirlData}
+              color="grey"
+              x="num_child"
+              y="percentage"
+              labels={({ datum }) => (type==="missing" ? datum.missing: null)}
+              width={400}
+            />
+          }
+        </VictoryStack>
+      </VictoryChart>
+    </div>
+    <div className="caption"
+         style={{marginLeft: "50px"}}
     >
-      <VictoryAxis
-        style={{
-          axis: {stroke: "transparent"},
-          ticks: {stroke: "transparent"}
-        }}
-        // tickValues specifies both the number of ticks and where
-        // they are placed on the axis
-        tickValues={[1, 2, 3]}
-        tickFormat={["First Child", "Second Child", "Third Child"]}
-      />
-      <VictoryStack>
-        <VictoryBar
-          data={type==="missing" ? BoyData: BoyDataFirst}
-          color="#477091"
-          x="num_child"
-          y="percentage"
-        />
-        <VictoryBar
-          data={type==="missing" ? GirlData: GirlDataFirst}
-          color="#8a3821"
-          x="num_child"
-          y="percentage"
-          labels={({ datum }) => (type==="missing" ? null : datum.ratio)}
-        />
-        {
-          type==="missing" &&
-        <VictoryBar
-          data={MissingGirlData}
-          color="grey"
-          x="num_child"
-          y="percentage"
-          labels={({ datum }) => (type==="missing" ? datum.missing: null)}
-          width={400}
-        />
-        }
-      </VictoryStack>
-    </VictoryChart>
+      newborn sex ratio in China given different child orders  <a href="http://www.stats.gov.cn/tjsj/pcsj/rkpc/6rp/indexch.htm" target="_blank">
+      (source)
+    </a>.
+    </div>
   </div>
 );
 

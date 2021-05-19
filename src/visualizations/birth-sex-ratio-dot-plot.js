@@ -22,27 +22,55 @@ const SexRatioDotPlot = ({type}) => {
   }
 
   return (
-    <div className="dot-plot-overall" style={{
-      padding: "30px"
-    }}>
-      <div className="sex-block">
-        <div className="label">
-          Boy
+    <div>
+      <div className="dot-plot-overall" style={{
+        padding: "30px"
+      }}>
+        <div className="sex-block">
+          <div className="label">
+            Boy
+          </div>
+          <div className="sex-ratio-circle-wrapper">
+            {boy_circles}
+          </div>
         </div>
-        <div className="sex-ratio-circle-wrapper">
-          {boy_circles}
+        <div className="sex-block">
+          <div className="label">
+            Girl
+          </div>
+          <div className="sex-ratio-circle-wrapper">
+            {girl_circles}
+          </div>
         </div>
+
       </div>
-      <div className="sex-block">
-        <div className="label">
-          Girl
-        </div>
-        <div className="sex-ratio-circle-wrapper">
-          {girl_circles}
-        </div>
+
+      <div style={{marginLeft: "40px"}}>
+        {
+          type==="china" ?
+            <div className="caption"
+            >
+              newborn sex ratio in China in 2009 <a href="http://www.stats.gov.cn/tjsj/pcsj/rkpc/6rp/indexch.htm" target="_blank">
+              (source)
+            </a>.
+          </div> :
+            type==="missing" ?
+              <div className="caption"
+              >
+                estimated percentage of girl that are missing
+              </div>
+              :
+              <div className="caption"
+              >
+                world average newborn sex ratio <a href="http://www.stats.gov.cn/tjsj/pcsj/rkpc/6rp/indexch.htm" target="_blank">
+                (source)
+              </a>.
+              </div>
+        }
       </div>
 
     </div>
+
   );
 }
 

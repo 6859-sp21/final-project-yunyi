@@ -7,27 +7,43 @@ import SexRatioDotPlot from "../visualizations/birth-sex-ratio-dot-plot";
 import ScrollToTop from "../components/scroll-to-top";
 
 const SexRatioNumber = () => (
-  <div style={{
-    fontSize: "150px",
-    textAlign: "center",
-    border: "5px solid black",
-    padding: "100px"
-  }}>
-    1.21: 1
+  <div>
+    <div style={{
+      fontSize: "150px",
+      textAlign: "center",
+      border: "5px solid black",
+      padding: "70px 100px"
+    }}>
+      1.21: 1
+
+    </div>
+    <div className="caption"
+    >
+        newborn sex ratio in China in 2009 <a href="http://www.stats.gov.cn/tjsj/pcsj/rkpc/6rp/indexch.htm" target="_blank">
+        (source)
+      </a>.
+    </div>
   </div>
 )
 
 const DotGirlMissing = () => {
   // temp just the number
   return (
-    <div style={{
-     fontSize: "150px",
-      textAlign: "center",
-      border: "5px solid black",
-      padding: "100px"
-    }}>
-      83034
+    <div>
+      <div style={{
+        fontSize: "150px",
+        textAlign: "center",
+        border: "5px solid black",
+        padding: "100px"
+      }}>
+        83034
+      </div>
+      <div className="caption"
+      >
+        calculated number of missing newborn girl in 2009.
+      </div>
     </div>
+
   )
 };
 
@@ -115,7 +131,12 @@ const BirthPage = () => {
                visibility: currentStepIndex>=8 && currentStepIndex < 24 ? "visible" : "hidden"
              }}
         >
-          {years[currentStepIndex-8]}
+          <div className="caption"
+          >
+            worldwide newborn sex ratio in {countryVisYear} <a href="https://data.worldbank.org/indicator/SP.POP.BRTH.MF?locations=CN" target="_blank">
+            (source)
+          </a>.
+          </div>
           <div style={{height: "600px"}}>
             <SexRatioWorldByYear year={countryVisYear} />
           </div>
