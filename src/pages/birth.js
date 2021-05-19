@@ -154,7 +154,7 @@ const BirthPage = () => {
         >
           <SexRatioByChildNumber type={currentStepIndex=== 26 ? "original": "missing"}/>
         </div>
-        <div className="visualization"
+        <div className="visualization-fancy"
              style={{
                opacity: currentStepIndex===28 ? 1 : 0,
                visibility: currentStepIndex===28 ? "visible" : "hidden"
