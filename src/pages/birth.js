@@ -4,7 +4,10 @@ import Navbar from '../components/navbar';
 import SexRatioByChildNumber from '../visualizations/birth-sex-ratio-by-child-number';
 import SexRatioWorldByYear from "../visualizations/birth-sex-ratio-world";
 import SexRatioDotPlot from "../visualizations/birth-sex-ratio-dot-plot";
+import BirthNews from "../visualizations/birth-news";
 import ScrollToTop from "../components/scroll-to-top";
+
+import {Element, scroller, Link} from 'react-scroll';
 
 const SexRatioNumber = () => (
   <div>
@@ -67,7 +70,9 @@ const BirthPage = () => {
     }
   };
 
-
+  const scrollTo = (year) => {
+    setCountryVisYear(year);
+  }
 
   return (
     <div className="page">
@@ -149,12 +154,20 @@ const BirthPage = () => {
         >
           <SexRatioByChildNumber type={currentStepIndex=== 26 ? "original": "missing"}/>
         </div>
+        <div className="visualization"
+             style={{
+               opacity: currentStepIndex===28 ? 1 : 0,
+               visibility: currentStepIndex===28 ? "visible" : "hidden"
+             }}
+        >
+          <BirthNews />
+        </div>
 
 
 
 
         <div className="accompany-text-all">
-          <Scrollama onStepEnter={onStepEnter} offset={0.4}>
+          <Scrollama onStepEnter={onStepEnter} offset={0.4} id="scrollama">
             <Step data={1} >
               <h1 style={{color: currentStepIndex===1 ? "black": fadeColor}}>
                 The Unwanted Daughter
@@ -210,8 +223,11 @@ const BirthPage = () => {
                       textAlign:"center",
                       fontSize:"20px",
                       marginTop:"10px",
-                      color: currentStepIndex===4 ? "black": fadeColor
+                      color: countryVisYear===year ? "black": fadeColor,
+                      fontWeight: countryVisYear===year ? "bold": "normal"
                     }}
+                         className="year-timeline"
+                         // onClick={()=>scrollTo(year)}
                     >
                       {year}
                     </div>
@@ -254,6 +270,10 @@ const BirthPage = () => {
             </Step>
             <Step data={28} >
               <div className="text-block">
+                <p>
+                  Even if the girls are born, they are not welcomed in the family.
+                  Some of them are given misogynical names such as 招娣, which means "welcome brother".
+                </p>
                 <p>
 
                 </p>

@@ -8,6 +8,7 @@ import DomesticViolenceSexRatio from "../visualizations/marriage-domestic-violen
 import DomesticViolenceReportRatio from "../visualizations/marriage-domestic-violence-resolution";
 import DomesticViolencePoliceReturn from "../visualizations/marriage-domestic-violence-police-do-nothing";
 import MarriageDivorceSuccessRate from "../visualizations/marriage-divorce-rate"
+import MarriageNews from "../visualizations/marriage-news";
 
 const MarriagePage = () => {
   // don't touch
@@ -56,7 +57,14 @@ const MarriagePage = () => {
         >
           <MarriageDivorceSuccessRate />
         </div>
-
+        <div className="visualization-fancy"
+             style={{
+               opacity: currentStepIndex===7 ? 1 : 0,
+               visibility: currentStepIndex===7 ? "visible" : "hidden"
+             }}
+        >
+          <MarriageNews />
+        </div>
 
 
         <div className="accompany-text-all">
@@ -143,8 +151,6 @@ const MarriagePage = () => {
                 </p>
               </div>
             </Step>
-
-
 
 
           </Scrollama>

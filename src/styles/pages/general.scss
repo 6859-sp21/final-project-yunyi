@@ -83,4 +83,28 @@
   }
 }
 
+.news-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+  max-height: 80vh;
 
+  .news-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    margin: 15px 15px;
+  }
+}
+
+.source-link {
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted #000;
+  color: #454545;
+
+  &:hover {
+    color: #752929;
+  }
+}
