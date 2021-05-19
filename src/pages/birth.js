@@ -10,8 +10,8 @@ const SexRatioNumber = () => (
   <div style={{
     fontSize: "150px",
     textAlign: "center",
-    border: "5px solid black"
-
+    border: "5px solid black",
+    padding: "100px"
   }}>
     1.21: 1
   </div>
@@ -23,7 +23,8 @@ const DotGirlMissing = () => {
     <div style={{
      fontSize: "150px",
       textAlign: "center",
-      border: "5px solid black"
+      border: "5px solid black",
+      padding: "100px"
     }}>
       83034
     </div>
@@ -196,25 +197,26 @@ const BirthPage = () => {
                   </Step>
                 ))
               }
-            <Step data={24}>
-              <div className="text-block" style={{marginTop: "200px"}}>
+            {/*<Step data={24}>*/}
+            {/*  <div className="text-block" style={{marginTop: "200px"}}>*/}
+
+            {/*</Step>*/}
+            {/*<Step data={25} >*/}
+            {/*  <div className="text-block">*/}
+
+            {/*  </div>*/}
+            {/*</Step>*/}
+            <Step data={26} >
+              <div className="text-block">
                 <h2>One Child Policy</h2>
                 <p>
                   The one child policy, which outlaws having more than one child in a family, is the catalyst that turns
                   the widespread son preference into a female genocide.
                 </p>
-              </div>
-            </Step>
-            <Step data={25} >
-              <div className="text-block">
                 <p>
                   To avoid losing their jobs for having a second child, the son-seeking families ended up aborting
                   or killing their daughters to make room for their son.
                 </p>
-              </div>
-            </Step>
-            <Step data={26} >
-              <div className="text-block">
                 <p>
                   The newborn sex ratios for the first child, second child and third child
                   in 2009 are <b>1.14: 1</b>, <b>1.28:1</b> and <b>1.62:1</b>.
@@ -224,7 +226,8 @@ const BirthPage = () => {
             <Step data={27} >
               <div className="text-block">
                 <p>
-                  This translates to <b>7.7%</b>, <b>18.2%</b> and <b>35%</b> of the girls being aborted or killed.
+                  This translates to <b>7.7%</b>, <b>18.2%</b> and
+                  <b>35%</b> of the girls being aborted or killed.
                 </p>
               </div>
             </Step>
