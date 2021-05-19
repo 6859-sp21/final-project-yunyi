@@ -1,0 +1,56 @@
+[
+ 	{
+ 		"sex": "boy",
+ 		"num_child": 1,
+ 		"percentage": 0.512195121951,
+ 		"ratio": 1.1373
+ 	},
+ 	{
+ 		"sex": "girl",
+ 		"num_child": 1,
+ 		"percentage": 0.450360610174,
+ 		"ratio": 1.1373
+ 	},
+ 	{
+ 		"sex": "girl_missing",
+ 		"num_child": 1,
+ 		"percentage": 0.0374442678745,
+ 		"ratio": 1.1373
+ 	},
+ 	{
+ 		"sex": "boy",
+ 		"num_child": 2,
+ 		"percentage": 0.512195121951,
+ 		"ratio": 1.2843
+ 	},
+ 	{
+ 		"sex": "girl",
+ 		"num_child": 2,
+ 		"percentage": 0.398812677685,
+ 		"ratio": 1.2843
+ 	},
+ 	{
+ 		"sex": "girl_missing",
+ 		"num_child": 2,
+ 		"percentage": 0.0889922003635,
+ 		"ratio": 1.2843
+ 	},
+ 	 	{
+ 		"sex": "boy",
+ 		"num_child": 3,
+ 		"percentage": 0.512195121951,
+ 		"ratio": 1.6156
+ 	},
+ 	{
+ 		"sex": "girl",
+ 		"num_child": 3,
+ 		"percentage": 0.317030899945,
+ 		"ratio": 1.6156
+ 	},
+ 	{
+ 		"sex": "girl_missing",
+ 		"num_child": 3,
+ 		"percentage": 0.170773978104,
+ 		"ratio": 1.6156
+ 	}
+]
