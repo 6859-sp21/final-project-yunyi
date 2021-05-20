@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/final-project-yunyi/static/css/main.634e1790.chunk.css",
-    "main.js": "/final-project-yunyi/static/js/main.fff07782.chunk.js",
-    "main.js.map": "/final-project-yunyi/static/js/main.fff07782.chunk.js.map",
+    "main.js": "/final-project-yunyi/static/js/main.f66f0485.chunk.js",
+    "main.js.map": "/final-project-yunyi/static/js/main.f66f0485.chunk.js.map",
     "runtime-main.js": "/final-project-yunyi/static/js/runtime-main.286747da.js",
     "runtime-main.js.map": "/final-project-yunyi/static/js/runtime-main.286747da.js.map",
     "static/js/2.c63fded6.chunk.js": "/final-project-yunyi/static/js/2.c63fded6.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.286747da.js",
     "static/js/2.c63fded6.chunk.js",
     "static/css/main.634e1790.chunk.css",
-    "static/js/main.fff07782.chunk.js"
+    "static/js/main.f66f0485.chunk.js"
   ]
 }
